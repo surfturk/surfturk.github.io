@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The process of learning to think."
-date:       2020-06-08 16:54:41 +0000
+date:       2020-06-08 12:54:42 -0400
 permalink:  the_process_of_learning_to_think
 ---
 
@@ -9,7 +9,7 @@ permalink:  the_process_of_learning_to_think
 My personal relationship with coding has been a rollcoaster for a while. I grappled with the idea of becoming a programmer for quite a long time. I would straggle from one free coding video to the next free developer course like they were going out of style. I would learn bits and pieces of programming language like an archeologist chipping away at some monolith he didn't fully understand. Then, the world flipped upside down.
 
 
-The changes in the world forced me to confront the very thing I had been pondering for several years ; who do you want be. I had been a vagabond in many ways throughout my life. I had always cherished experience over monetary or material gain but that can only take you so far. Physical and laborous jobs are amazing for the mind and body. They teach you to meditate through action and I learned a lot through rough, labor jobs. But, what is a future that rests solely on the stamina of your bones? 40 years at a back breaking job gets you a broken back (no disrespect to those who choose it). I craved stimulation from another realm ; the mind.
+The changes in the world forced me to confront the very thing I had been pondering for several years ; who do you want be? I had been a vagabond in many ways throughout my life. I had always cherished experience over monetary or material gain but that can only take you so far. Physical and laborous jobs are amazing for the mind and body. They teach you to meditate through action and I learned a lot through rough, labor jobs. But, what is a future that rests solely on the stamina of your bones? 40 years at a back breaking job gets you a broken back (no disrespect to those who choose it). I craved stimulation from another realm ; the mind.
 
 Leading up this course, I completed as much of the pre-work as I could. I felt pretty confident with HTML, CSS and possibly some Javascript. I had followed some code-alongs so I felt like I knew a little more than a beginner. Wow, was I ever so wrong. The beginning lectures were fun and I found the atmosphere engaging. The simple act of being able to listen to someone speak about code was a rush and that was suprising. I thought to myself, " you're getting hooked. "  and "This was gonna be a lot of fun". Then, the labs hit.
 
