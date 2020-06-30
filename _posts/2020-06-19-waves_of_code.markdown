@@ -16,7 +16,7 @@ Now that my objects and methods were communicating, it was time to trick out the
 
 Now it was time to boot this project up and run through it. Oh wow, it works. I built my first ever application from scratch. I was actually super pumped the first time I typed in commands and was playing around in the app. This is only the beginning and I have so much more to learn and be excited about! 
 
-##### Technical code breakdown:
+## Technical code breakdown:
 I had a few technical hurdles that were fun to get through. I had a class method in my beach class that used an each 
 iteration to loop through an array and based on a conditional, make a new array. After I received some guidance, 
 I found out about Ruby's built-in select method. This method allowed me to select the elements I needed and create a
