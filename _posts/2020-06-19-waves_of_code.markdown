@@ -22,24 +22,8 @@ iteration to loop through an array and based on a conditional, make a new array.
 I found out about Ruby's built-in select method. This method allowed me to select the elements I needed and create a
 new array from those elements. So, my method that contained 4 to 5 lines of code went to 2 lines of code, pretty neat.
 
-Another aspect of coding that realized through this project was how the flow of a method works. If return is written as the last line of code then Ruby will return whatever the last line of code is. For example:
-
-def print_some_stuff
-   var = 1 + 3
-	 var
-	 return 5
-
-end
-
-This will return 5 no matter what because we are telling the method to return 5 as the last line. However, if we write this:
-
-def print_some_stuff
-  var = 1+3
-	var
-
-end
-
-We'll get 4. This seems basic now but it can come back to haunt you in larger applications.
+Another aspect of coding that I realized through this project was how the flow of a method works. If return is written as the last line of code, then Ruby will return whatever the last line of code is. For example, if I write a method that has a variable set as 1 + 3, I call the variable and then I call return 5, this will return 5 no matter what. However, if we write a method that contains a variable set as 1 + 3 and then I call that variable as the last line, I'll get 4.
+This seems basic now but it can come back to haunt you in larger applications.
 
 
 Berkley
