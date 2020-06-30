@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Waves of code"
-date:       2020-06-19 15:12:53 +0000
+date:       2020-06-19 11:12:54 -0400
 permalink:  waves_of_code
 ---
 
@@ -15,6 +15,31 @@ I first started with the framework of the CLI, how would it flow? It would promp
 Now that my objects and methods were communicating, it was time to trick out the user experience. I first added some personality to the on-screen text. This was a surfer app after all. I then went about trying to add some graphics to the intro and I went down a monsterous rabbit hole. Should I do color? Should I attempt animation? Should I try and add an entire photo realistic surfer to the intro? Ok, take it easy. its your first project. I finally decided on a nice, big logo for the intro and settled on that. 
 
 Now it was time to boot this project up and run through it. Oh wow, it works. I built my first ever application from scratch. I was actually super pumped the first time I typed in commands and was playing around in the app. This is only the beginning and I have so much more to learn and be excited about! 
+
+##### Technical code breakdown:
+I had a few technical hurdles that were fun to get through. I had a class method in my beach class that used an each 
+iteration to loop through an array and based on a conditional, make a new array. After I received some guidance, 
+I found out about Ruby's built-in select method. This method allowed me to select the elements I needed and create a
+new array from those elements. So, my method that contained 4 to 5 lines of code went to 2 lines of code, pretty neat.
+
+Another aspect of coding that realized through this project was how the flow of a method works. If return is written as the last line of code then Ruby will return whatever the last line of code is. For example:
+
+def print_some_stuff
+   var = 1 + 3
+	 var
+	 return 5
+
+end
+
+This will return 5 no matter what because we are telling the method to return 5 as the last line. However, if we write this:
+
+def print_some_stuff
+  var = 1+3
+	var
+
+end
+
+We'll get 4. This seems basic now but it can come back to haunt you in larger applications.
 
 
 Berkley
