@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Learning to gig with Sinatra"
-date:       2020-07-20 20:47:46 +0000
+date:       2020-07-20 16:47:46 -0400
 permalink:  learning_to_gig_with_sinatra
 ---
 
@@ -20,12 +20,13 @@ end
 I could use this method anywhere I want in REST methods and the current user would only be able to view or manipulate their data. Wow, big breakthrough.
 
 After testing the functionality of my app, it was time to style it a bit. This is where I ran into a google font problem. I decided to use bootstrap for my project and I had linked bootstrap in the head but my google font link was not working. After two hours of furious google searching I found the issue! The order of placement of style links in the head matters a lot. For example,
-<head>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/main.css"/>
-</head> 
+
+head
+link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"
+  link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"
+  link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"
+  link rel="stylesheet" href="/css/main.css"
+head
 
 is important because I had to place the fonts before bootstrap and my main.css files. After that however, my font was still not working. Another deep dive and I found out that I would have to inline style my font. I guess its an issue with bootstrap and google fonts. Not my ideal choice but maybe I should have just gone with materialize in the first place, hahah oh well. 
 
@@ -38,8 +39,7 @@ post '/playlists/new' do
            artist: params[:artist], 
            song: params[:song])
            @playlist.save
-        erb :"/playlists/show"
-        
-       end   
+        erb :"/playlists/show" end
+      
 			 
 I looked on the ActiveRecord docs site and I found my answer, sheeebang! If my create method didn't have a shebang after it then it would never validate the data and would simply create whatever was entered or not entered in this case. As soon as I threw that shebang on, everything worked and pumped my fists in the air! That was a great feeling. This was actually a really fun project to work and I learned so much. Cheers!
