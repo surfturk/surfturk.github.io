@@ -116,7 +116,7 @@ renderCat() {
 	
 	
 	
-	
+	So if we look at the static method header, We see that it will return an h1 that says all cats. This is a static method so we would not be able to say type cat1.header or cat2.header. These are instances of the Cat class. We would instead type Cat.header and it would return the h1 all cats. This highlights the difference between instance methods and static methods.
  
  
  
