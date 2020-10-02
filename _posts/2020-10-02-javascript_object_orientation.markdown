@@ -80,12 +80,24 @@ class Cat {
       this.name= name;
       this.species = species;
       this.age = age;
-      Cat.all.push(this);}}
+      Cat.all.push(this);}
 
 		
-static all = []
+static all = [] }
 		
 So what is going on here? Well, I've created a cat class with a constructor function that take in those keys and values.    I'm also pushing an an instance of the class upon creation into the Cat all array. If we look down below we can see an      empty array that is static. This means that this array is at the class level and It is global, thus I can use it anywhere in my application. we could have an app that renders a cat in html and we could have a class method like so:
+
+
+class Cat {
+    constructor(name, species, age) {
+      this.name= name;
+      this.species = species;
+      this.age = age;
+      Cat.all.push(this);}
+
+		
+static all = [] 
+
 
 renderCat() {
        return(
@@ -95,5 +107,7 @@ renderCat() {
           <li> Cat Species  ${this.species}</li>
           <li> Cat Age ${this.age}</li>
          </ul>)}
+				 
+				 }
 	
- We could then use this method and take in the Cat.all array, renderCat(Cat.all). We could then build forms, use fetch to   read and create data(new cats), push those cats into Cat.all upon creation and so on but, those cats are all available on  the global level in the Cat array because we placed the keyword static in front of the array.
+ We could then use this method and take in the Cat.all array, renderCat(Cat.all). We could then build forms, use fetch to   read and create data(new cats), push those cats into Cat.all upon creation and so on but, those cats are all available on  the global level in the Cat array because we placed the keyword static in front of the array. The array is for the whole class of Cat because of the keyword static.
