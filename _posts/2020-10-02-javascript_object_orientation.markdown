@@ -55,8 +55,7 @@ cat1 = Cat = Object. The cat1 instance inherits from the Cat prototype object, a
 
 
 Cat.prototype.hello= function() {
-  alert(this.name + " is a " + this.species + " and is  " + this.age + " years old") 
-}
+  alert(this.name + " is a " + this.species + " and is  " + this.age + " years old") }
 
 Then we could call the function on an object we already created:
 
