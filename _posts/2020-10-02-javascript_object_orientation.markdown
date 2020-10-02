@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Javascript Object Orientation"
-date:       2020-10-02 18:07:00 +0000
+date:       2020-10-02 14:07:01 -0400
 permalink:  javascript_object_orientation
 ---
 
@@ -46,9 +46,13 @@ __lookupSetter__: ƒ __lookupSetter__()
 get __proto__: ƒ __proto__()
 set __proto__: ƒ __proto__()
 ﻿
+ 
+ 
 ​
 Woah, Thats a lot. So these are methods that we inherit from the main prototype object. So, the chain looks like this:
 cat1 = Cat = Object. The cat1 instance inherits from the Cat prototype object, and the Cat protoype object inherits from the Object prototype. This is the protoype chain.  Why is this so poweful? Well, lets say we want to add a method to the Cat function that alerts the user with the data in their new object. We could write this: 
+
+
 
 Cat.prototype.hello= function() {
   alert(this.name + " is a " + this.species + " and is  " + this.age + " years old") 
@@ -92,6 +96,6 @@ renderCat() {
          <li>Cat name ${this.name}</li>
           <li> Cat Species  ${this.species}</li>
           <li> Cat Age ${this.age}</li>
-         </ul>
+         </ul>)}
 	
-	We could then use this method and take in the Cat.all array, renderCat(Cat.all). We could then build forms, use fetch to read and create data(new cats), push those cats into Cat.all upon creation and so on but, those cats are all available on the global level in the Cat array because we placed the keyword static in front of the array.
+We could then use this method and take in the Cat.all array, renderCat(Cat.all). We could then build forms, use fetch to read and create data(new cats), push those cats into Cat.all upon creation and so on but, those cats are all available on the global level in the Cat array because we placed the keyword static in front of the array.
