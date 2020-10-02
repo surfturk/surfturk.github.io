@@ -106,8 +106,6 @@ renderCat() {
          <li>Cat name ${this.name}</li>
           <li> Cat Species  ${this.species}</li>
           <li> Cat Age ${this.age}</li>
-         </ul>)}
-				 
-				 }
+         </ul>) } }
 	
  We could then use this method and take in the Cat.all array, renderCat(Cat.all). We could then build forms, use fetch to   read and create data(new cats), push those cats into Cat.all upon creation and so on but, those cats are all available on  the global level in the Cat array because we placed the keyword static in front of the array. The array is for the whole class of Cat because of the keyword static.
